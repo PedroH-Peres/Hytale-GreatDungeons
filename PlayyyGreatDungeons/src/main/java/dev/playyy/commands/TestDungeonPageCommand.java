@@ -10,10 +10,14 @@ import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import dev.playyy.models.DungeonLobby;
+import dev.playyy.models.LobbyManager;
 import dev.playyy.ui.DungeonLobbyUI;
 
 import javax.annotation.Nonnull;
 import java.util.concurrent.CompletableFuture;
+
+import static com.hypixel.hytale.logger.HytaleLogger.getLogger;
 
 public class TestDungeonPageCommand extends AbstractPlayerCommand {
 
@@ -26,8 +30,17 @@ public class TestDungeonPageCommand extends AbstractPlayerCommand {
         Player player = commandContext.senderAs(Player.class);
 
         CompletableFuture.runAsync(() -> {
+            logInfo("Comando executado");
+            DungeonLobby lobby = LobbyManager.createLobby(player, "a", 2);
+            logInfo("Dungeon lobby criado: " + lobby.toString());
             player.getPageManager().openCustomPage(ref, store, new DungeonLobbyUI(playerRef, CustomPageLifetime.CanDismiss));
+            logInfo("Teoricamente deu tudo certo");
+
             playerRef.sendMessage(Message.raw("UI Page Shown"));
         }, world);
+    }
+
+    public void logInfo(String msg) {
+        getLogger().atInfo().log("[Playyy] " + msg);
     }
 }

@@ -39,6 +39,10 @@ public class LobbyManager {
         return playerLobbyLookup.get(playerUuid);
     }
 
+    public static DungeonLobby getPlayerLobbybyUuid(UUID playerUuid) {
+        return playerLobbyLookup.get(playerUuid);
+    }
+
     public static void removeLobby(Player host) {
         Ref<EntityStore> hostRef = host.getReference();
         UUID hostUuid = hostRef.getStore().getComponent(hostRef, UUIDComponent.getComponentType()).getUuid();

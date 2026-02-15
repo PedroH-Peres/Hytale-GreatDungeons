@@ -1,0 +1,27 @@
+ Group {
+
+    @TextName = "Player";
+    @TextLevel = "Lvl.30";
+
+    LayoutMode: Left;
+    Label #Name {
+      Text: @TextName;
+      Style: (TextColor: #ffffff);
+    }
+    Group {
+      LayoutMode: Top;
+      Anchor: (Right: 4);
+    }
+    Label #Level {
+      Text: @TextLevel;
+      Style: (TextColor: #ffffff);
+    }
+    Group {
+      LayoutMode: Top;
+      Anchor: (Right: 4);
+    }
+    Label #Ready {
+      Text: "Ready";
+      Style: (TextColor: #ffffff);
+    }
+  }

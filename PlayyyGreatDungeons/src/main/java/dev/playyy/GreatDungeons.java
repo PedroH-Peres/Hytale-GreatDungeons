@@ -41,4 +41,5 @@ public class GreatDungeons extends JavaPlugin {
     public void logInfo(String msg) {
         getLogger().atInfo().log("[Playyy] " + msg);
     }
+
 }

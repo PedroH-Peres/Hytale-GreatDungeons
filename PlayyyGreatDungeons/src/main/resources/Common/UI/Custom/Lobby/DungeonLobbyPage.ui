@@ -50,31 +50,9 @@ Group {
       }
       Group #PlayerList {
         LayoutMode: TopScrolling;
-        Group #Player {
-          LayoutMode: Left;
-          Label #Labeld09e3202 {
-            Text: "Nome";
-            Style: (TextColor: #ffffff);
-          }
-          Group #Group917de1a0 {
-            LayoutMode: Top;
-            Anchor: (Right: 4);
-          }
-          Label #Level {
-            Text: "Lvl 30";
-            Style: (TextColor: #ffffff);
-          }
-          Group #Group917de1a0copy {
-            LayoutMode: Top;
-            Anchor: (Right: 4);
-          }
-          Label #Ready {
-            Text: "Ready";
-            Style: (TextColor: #ffffff);
-          }
-        }
+        ScrollbarStyle: $C.@DefaultScrollbarStyle;
       }
-      $C.@TextButton #TextButtonb14a38c9 {
+      $C.@TextButton #ReadyButton {
         Padding: (Full: 0);
         Text: "Ready";
       }

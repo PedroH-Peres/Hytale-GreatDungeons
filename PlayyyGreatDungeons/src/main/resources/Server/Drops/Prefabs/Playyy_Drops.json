@@ -1,0 +1,35 @@
+{
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 50,
+        "RollsMin": 1,
+        "RollsMax": 2,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Weight": 20,
+            "Item": {
+              "ItemId": "Armor_Adamantite_Chest"
+            }
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Armor_Adamantite_Hands"
+            },
+            "Weight": 80
+          }
+        ]
+      },
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Armor_Adamantite_Head"
+        }
+      }
+    ]
+  }
+}

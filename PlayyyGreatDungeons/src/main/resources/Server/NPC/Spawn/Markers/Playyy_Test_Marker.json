@@ -1,0 +1,21 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "Skeleton_Archer",
+      "Weight": 50,
+      "SpawnAfterGameTime": "0",
+      "RealtimeRespawnTime": 15
+    },
+    {
+      "Name": "Crocodile",
+      "Weight": 50,
+      "SpawnAfterGameTime": "0",
+      "RealtimeRespawnTime": 15
+    }
+  ],
+  "ExclusionRadius": 10,
+  "MaxDropHeight": 4,
+  "RealtimeRespawn": true,
+  "ManualTrigger": false
+}

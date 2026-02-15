@@ -1,0 +1,34 @@
+{
+  "Entries": [
+    {
+      "Weight": 20,
+      "Name": "Furniture_Temple_Wind_Chest_Large",
+      "State": {
+        "Custom": false,
+        "AllowViewing": true,
+        "Type": "container",
+        "Droplist": "Playyy_Drops"
+      }
+    },
+    {
+      "Name": "Furniture_Lumberjack_Chest_Small",
+      "Weight": 200,
+      "State": {
+        "Custom": false,
+        "AllowViewing": true,
+        "Type": "container",
+        "Droplist": "Playyy_Drops"
+      }
+    },
+    {
+      "Name": "Furniture_Village_Chest_Large",
+      "Weight": 20,
+      "State": {
+        "Custom": false,
+        "AllowViewing": true,
+        "Type": "container",
+        "Droplist": "Playyy_Drops"
+      }
+    }
+  ]
+}

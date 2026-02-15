@@ -1,0 +1,1829 @@
+{
+  "version": 8,
+  "blockIdVersion": 10,
+  "anchorX": -8,
+  "anchorY": 5,
+  "anchorZ": -31,
+  "blocks": [
+    {
+      "x": -9,
+      "y": 0,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 4,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 5,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 6,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 7,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 8,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 9,
+      "z": -30,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 1
+    },
+    {
+      "x": -9,
+      "y": 0,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 1,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 4,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 5,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 6,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 7,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 8,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 9,
+      "z": -29,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 1
+    },
+    {
+      "x": -9,
+      "y": 0,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 1,
+      "z": -28,
+      "name": "Rock_Stone_Brick_Ornate"
+    },
+    {
+      "x": -9,
+      "y": 2,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 3,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 4,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 5,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 7,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 8,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 9,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 3,
+      "z": -27,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 10
+    },
+    {
+      "x": -9,
+      "y": 4,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 5,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 6,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 7,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 8,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 9,
+      "z": -27,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 1
+    },
+    {
+      "x": -9,
+      "y": 4,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 5,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 6,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 7,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 8,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 9,
+      "z": -26,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 1
+    },
+    {
+      "x": -9,
+      "y": 0,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 1,
+      "z": -25,
+      "name": "Rock_Stone_Brick_Ornate"
+    },
+    {
+      "x": -9,
+      "y": 4,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 5,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 7,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 8,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 9,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 0,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 1,
+      "z": -24,
+      "name": "Rubble_Stone_Medium"
+    },
+    {
+      "x": -9,
+      "y": 4,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 5,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 6,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 7,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 8,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 9,
+      "z": -24,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 1
+    },
+    {
+      "x": -9,
+      "y": 0,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 1,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 2,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 4,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 5,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 6,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 7,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 8,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 9,
+      "z": -23,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 1
+    },
+    {
+      "x": -9,
+      "y": 0,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 1,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 2,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 3,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 4,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 5,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 7,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 8,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 9,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 4,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 5,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 6,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 7,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 8,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 9,
+      "z": -21,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 1
+    },
+    {
+      "x": -9,
+      "y": 4,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 5,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 6,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 7,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 8,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -9,
+      "y": 9,
+      "z": -20,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 1
+    },
+    {
+      "x": -8,
+      "y": 5,
+      "z": -31,
+      "name": "Empty"
+    },
+    {
+      "x": -8,
+      "y": 0,
+      "z": -30,
+      "name": "Rubble_Stone"
+    },
+    {
+      "x": -8,
+      "y": 4,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 8,
+      "z": -30,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 9
+    },
+    {
+      "x": -8,
+      "y": 9,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 4,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 8,
+      "z": -29,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 9
+    },
+    {
+      "x": -8,
+      "y": 9,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 4,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 8,
+      "z": -28,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 9
+    },
+    {
+      "x": -8,
+      "y": 9,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 4,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 8,
+      "z": -27,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 9
+    },
+    {
+      "x": -8,
+      "y": 9,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 4,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 5,
+      "z": -26,
+      "name": "Rubble_Stone"
+    },
+    {
+      "x": -8,
+      "y": 8,
+      "z": -26,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 9
+    },
+    {
+      "x": -8,
+      "y": 9,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 4,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 8,
+      "z": -25,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 9
+    },
+    {
+      "x": -8,
+      "y": 9,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 4,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 8,
+      "z": -24,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 9
+    },
+    {
+      "x": -8,
+      "y": 9,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 4,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 8,
+      "z": -23,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 9
+    },
+    {
+      "x": -8,
+      "y": 9,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 0,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 1,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 2,
+      "z": -22,
+      "name": "Rubble_Stone"
+    },
+    {
+      "x": -8,
+      "y": 4,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 8,
+      "z": -22,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 9
+    },
+    {
+      "x": -8,
+      "y": 9,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 4,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 8,
+      "z": -21,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 9
+    },
+    {
+      "x": -8,
+      "y": 9,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 4,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -8,
+      "y": 8,
+      "z": -20,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 9
+    },
+    {
+      "x": -8,
+      "y": 9,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 4,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": -30,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 11
+    },
+    {
+      "x": -7,
+      "y": 9,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 0,
+      "z": -29,
+      "name": "Rubble_Stone"
+    },
+    {
+      "x": -7,
+      "y": 4,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": -29,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 11
+    },
+    {
+      "x": -7,
+      "y": 9,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 0,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 1,
+      "z": -28,
+      "name": "Rubble_Stone"
+    },
+    {
+      "x": -7,
+      "y": 4,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": -28,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 11
+    },
+    {
+      "x": -7,
+      "y": 9,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 4,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": -27,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 11
+    },
+    {
+      "x": -7,
+      "y": 9,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 4,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": -26,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 11
+    },
+    {
+      "x": -7,
+      "y": 9,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 0,
+      "z": -25,
+      "name": "Rubble_Stone"
+    },
+    {
+      "x": -7,
+      "y": 4,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": -25,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 11
+    },
+    {
+      "x": -7,
+      "y": 9,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 4,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": -24,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 11
+    },
+    {
+      "x": -7,
+      "y": 9,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 4,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": -23,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 11
+    },
+    {
+      "x": -7,
+      "y": 9,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 0,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 3,
+      "z": -22,
+      "name": "Deco_SpiderWeb",
+      "rotation": 8
+    },
+    {
+      "x": -7,
+      "y": 4,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": -22,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 11
+    },
+    {
+      "x": -7,
+      "y": 9,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 4,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 5,
+      "z": -21,
+      "name": "Rubble_Stone"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": -21,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 11
+    },
+    {
+      "x": -7,
+      "y": 9,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 4,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": -20,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 11
+    },
+    {
+      "x": -7,
+      "y": 9,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 5,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -30,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -30,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 3
+    },
+    {
+      "x": -6,
+      "y": 0,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 1,
+      "z": -29,
+      "name": "Rubble_Stone_Medium"
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 5,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -29,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -29,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 3
+    },
+    {
+      "x": -6,
+      "y": 0,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 1,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 5,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 5,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -27,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 3
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 5,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -26,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 3
+    },
+    {
+      "x": -6,
+      "y": 3,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 5,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": -25,
+      "name": "Rock_Stone_Brick_Ornate"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -24,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 10
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -24,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 3
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -23,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 8
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -23,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 3
+    },
+    {
+      "x": -6,
+      "y": 0,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 1,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 2,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 3,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 5,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": -22,
+      "name": "Rock_Stone_Brick_Ornate"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 5,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -21,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -21,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 3
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 5,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": -20,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": -20,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 3
+    },
+    {
+      "x": -5,
+      "y": 4,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -5,
+      "y": 5,
+      "z": -28,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 2
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": -28,
+      "name": "Rock_Stone_Brick_Ornate"
+    },
+    {
+      "x": -5,
+      "y": 4,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -5,
+      "y": 5,
+      "z": -27,
+      "name": "Block_Spawner_Block",
+      "components": {
+        "Components": {
+          "PlacedByInteraction": {
+            "WhoPlacedUuid": {
+              "$binary": "30E5va+4QA2ISsflEWOC9g==",
+              "$type": "04"
+            }
+          },
+          "BlockSpawner": {
+            "BlockSpawnerId": "YUNGs_HyDungeons_Skeleton_Dungeon_Common"
+          }
+        }
+      }
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": -27,
+      "name": "Rock_Stone_Brick_Beam",
+      "rotation": 4
+    },
+    {
+      "x": -5,
+      "y": 0,
+      "z": -26,
+      "name": "Rubble_Stone"
+    },
+    {
+      "x": -5,
+      "y": 4,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": -26,
+      "name": "Furniture_Human_Ruins_Banner",
+      "rotation": 1
+    },
+    {
+      "x": -5,
+      "y": 4,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -5,
+      "y": 4,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -5,
+      "y": 0,
+      "z": -23,
+      "name": "Rubble_Stone_Medium"
+    },
+    {
+      "x": -5,
+      "y": 4,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -5,
+      "y": 0,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -5,
+      "y": 1,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -5,
+      "y": 3,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -5,
+      "y": 4,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -5,
+      "y": 5,
+      "z": -22,
+      "name": "Rock_Stone_Brick_Stairs"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": -28,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 2
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -4,
+      "y": 0,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": -22,
+      "name": "Rubble_Stone"
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": -22,
+      "name": "Rock_Stone_Brick_Stairs"
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": -28,
+      "name": "Rock_Stone_Brick_Ornate"
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": -28,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": -28,
+      "name": "Furniture_Human_Ruins_Torch"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -27,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 10
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": -27,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": -27,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 3
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -26,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 8
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": -26,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": -26,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 3
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": -25,
+      "name": "Rock_Stone_Brick_Ornate"
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": -25,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -24,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 10
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": -24,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": -24,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 3
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -23,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 8
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": -23,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": -23,
+      "name": "Rock_Stone_Brick_Stairs",
+      "rotation": 3
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": -22,
+      "name": "Rock_Stone_Brick_Ornate"
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": -22,
+      "name": "Rock_Stone_Brick"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": -22,
+      "name": "*Furniture_Human_Ruins_Torch_State_Definitions_Off",
+      "rotation": 3
+    }
+  ]
+}

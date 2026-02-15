@@ -1,0 +1,21 @@
+$C = "../Common.ui";
+Group {
+  Anchor: (Width: 200, Height: 200, Right: 20);
+  Label #Title {
+    Padding: (Full: 0);
+    Text: "Great Dungeons";
+    Style: (TextColor: #173fb5, FontSize: 20, RenderBold: true, HorizontalAlignment: Center);
+  }
+  Label #Kills {
+    Anchor: (Top: 30);
+    Padding: (Full: 0);
+    Text: "Kills";
+    Style: (TextColor: #ffffff, HorizontalAlignment: Center);
+  }
+  Label #Boss {
+    Anchor: (Top: 60);
+    Padding: (Full: 0);
+    Text: "Bosses";
+    Style: (TextColor: #ffffff, HorizontalAlignment: Center);
+  }
+}

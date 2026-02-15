@@ -1,0 +1,20 @@
+{
+    "Group": "Playyy",
+    "Name": "GreatDungeons",
+    "Version": "0.0.1",
+    "Description": "The Playyy's Dungeons Plugin",
+    "Authors": [
+        {
+            "Name": "Playyy",
+            "Email": "pedrohperescode@gmail.com",
+            "Url": ""
+        }
+    ],
+    "Website": "",
+    "DisabledByDefault": false,
+    "IncludesAssetPack": true,
+    "Dependencies": {},
+    "OptionalDependencies": {},
+    "ServerVersion": "*",
+    "Main": "dev.playyy.GreatDungeons"
+}

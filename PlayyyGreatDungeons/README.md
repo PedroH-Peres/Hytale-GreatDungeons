@@ -1,55 +1,36 @@
-# Hytale Plugin Template
+# 🗝️ Hytale Playyy Great Dungeons
 
-A ready-to-use starting point for creating Hytale server plugins with Java, _or Kotlin_. If you've
-been using the Asset Editor and want to start writing server-side logic — custom commands, event
-handling, gameplay systems — this is the simplest place to begin.
+![Badge License](https://img.shields.io/badge/License-MIT-green.svg)
+![Badge Java](https://img.shields.io/badge/Language-Java-orange.svg)
+![Badge Hytale](https://img.shields.io/badge/Platform-Hytale-blue.svg)
 
-## How to start?
+**Hytale Playyy Great Dungeons** é um sistema modular para criação e execução de masmorras instanciadas em servidores de Hytale. O projeto une a imersão de RPGs clássicos com a conveniência de sistemas modernos de Lobby.
 
-1. Copy the template by downloading it or using the "Use this template" button.
-2. [Configure or Install the Java SDK](https://hytalemodding.dev/en/docs/guides/plugin/setting-up-env)
-   to use the latest 25 from JetBrains or similar.
-3. Open the project in your favorite IDE, we
-   recommend [IntelliJ IDEA](https://www.jetbrains.com/idea/download).
-4. Optionally, run `./gradlew` if your IDE does not automtically synchronizes.
-5. Run the devserver with the Run Configuration created, or `./gradlew devServer`.
+---
 
-> On Windows, use `.\gradlew.bat` instead of `./gradlew`, this script is here to run the
-> Gradle without you needing to install the tooling itself, only the Java is required.
+## ✨ Funcionalidades
 
-With that you will be prompted in the output to authorize your server, and then you can start
-developing your plugin while the server is live reloading the code changes.
+* **🌍 Instanciamento:** Cada grupo joga em seu próprio mundo isolado, sem interferência externa.
+* **🗝️ Sistema de Acesso:** Uso de chaves físicas e portais interativos no mundo para iniciar expedições.
+* **👥 Lobby UI:** Interface visual integrada para gerenciar o grupo e confirmar presença antes da partida.
+* **⚔️ Progressão:** Sistema de recompensas e loot protegidos, liberados apenas após completar objetivos.
 
-From here,
-the [HytaleModding guides](https://hytalemodding.dev/en/docs/guides/plugin/build-and-test) cover
-more details!
+---
 
-## Scaffoldit Plugin
+## 🤝 Como Contribuir
 
-While there are multiple plugins made for Hytale, the template currently uses a zero-boilerplate one
-where you only need the absolute minimum to start. However, you do have access to everything as
-normal if you know what you are doing.
+Contribuições são muito bem-vindas! Sinta-se à vontade para abrir **Issues** com sugestões ou enviar **Pull Requests**.
 
-For in-depth configuration, you can visit the [ScaffoldIt Plugin Docs](https://scaffoldit.dev).
+1.  Faça um **Fork** do projeto.
+2.  Crie uma Branch para sua Feature (`git checkout -b feature/MinhaMelhoria`).
+3.  Faça o **Commit** das suas mudanças.
+4.  Faça o **Push** (`git push origin feature/MinhaMelhoria`).
+5.  Abra um **Pull Request**.
 
-## Troubleshooting
+---
 
-- **Gradle sync fails in IntelliJ** –
-  _Check that Java 25 is installed and configured under File → Project Structure → SDKs._
-- **Build fails with missing dependencies** –
-  _Run `./gradlew build --refresh-dependencies`. Make sure you have internet access!_
-- **Permission denied on `./gradlew`** –
-  _Run `chmod +x gradlew` (macOS/Linux)._
-- **Hot-reload doesn't work** –
-  _Verify you're using JetBrains Runtime, not a regular JDK._
+## ⚖️ Licença
 
-## Resources
+Este projeto está licenciado sob a **MIT License**.
 
-- [Hytale Modding Guides](https://hytalemodding.dev)
-- [Hytale Modding Discord](https://discord.gg/hytalemodding)
-- [ScaffoldIt Plugin Docs](https://scaffoldit.dev)
-
-## License
-
-Add your own after copying the template, though we recommend using MIT, BSD, or Apache to keep
-the modding community open!
+Isso significa que você é livre para usar, copiar, modificar, fundir, publicar, distribuir, sublicenciar e/ou vender cópias do software, desde que o aviso de direitos autorais e a permissão original sejam incluídos em todas as cópias ou partes substanciais do software.

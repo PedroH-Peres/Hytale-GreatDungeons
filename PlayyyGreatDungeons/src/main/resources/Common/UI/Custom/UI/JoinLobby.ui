@@ -10,7 +10,6 @@ Group {
     Background: (Color: #333333);
     Padding: (Full: 0);
     Label #Title {
-      LayoutMode: Left;
       Padding: (Full: 0);
       Text: "Entrar em Dungeon";
       Style: (TextColor: #ffffff, RenderBold: true, Alignment: Center);

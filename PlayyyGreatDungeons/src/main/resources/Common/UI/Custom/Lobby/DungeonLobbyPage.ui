@@ -4,24 +4,22 @@ Group {
   LayoutMode: Top;
   Background: (Color: #0c1d2c);
   Anchor: (Width: 1200, Height: 720);
-  Padding: (Full: 8);
   Group #Title {
     LayoutMode: MiddleCenter;
     Background: (Color: #8d12ba);
     FlexWeight: 0;
-    Padding: (Full: 4);
     Label #Label30ae39cd {
       Background: (Color: #33333333);
       FlexWeight: 1;
       Text: "Great Dungeons";
-      Style: (FontSize: 14, Alignment: Center, TextColor: #ffffff, RenderBold: true);
+      Style: (HorizontalAlignment: Center, VerticalAlignment: Center, FontSize: 14, Alignment: Center, TextColor: #ffffff, RenderBold: true);
     }
   }
   Group #Content {
     LayoutMode: Left;
     Background: (Color: #0e2048);
     FlexWeight: 1;
-    Padding: (Full: 8);
+    Padding: (Full: 5);
     Group #LeftContainer {
       LayoutMode: Top;
       FlexWeight: 1;
@@ -49,12 +47,17 @@ Group {
         Anchor: (Bottom: 2);
       }
       Group #PlayerList {
-        LayoutMode: TopScrolling;
         ScrollbarStyle: $C.@DefaultScrollbarStyle;
+        LayoutMode: TopScrolling;
+        FlexWeight: 1;
       }
       $C.@TextButton #ReadyButton {
-        Padding: (Full: 0);
         Text: "Ready";
+      }
+      Group {
+        LayoutMode: Top;
+        Anchor: (Height: 10);
+        Padding: (Full: 0);
       }
     }
     Group {
@@ -62,10 +65,28 @@ Group {
       Anchor: (Right: 10);
     }
     Group #RightContainer {
+      LayoutMode: Top;
       FlexWeight: 1;
       Label {
         Text: "Dungeon Info";
         Style: (TextColor: #ffffff);
+      }
+      Group #Group5c5d419e {
+        LayoutMode: Top;
+        Anchor: (Bottom: 2);
+        Padding: (Full: 0);
+      }
+      Group #DungeonInfo {
+        LayoutMode: TopScrolling;
+        FlexWeight: 1;
+      }
+      $C.@TextButton #StartButton {
+        Text: "Iniciar";
+      }
+      Group {
+        LayoutMode: Top;
+        Anchor: (Height: 10);
+        Padding: (Full: 0);
       }
     }
   }
@@ -74,6 +95,5 @@ Group {
     Background: (Color: #1c3082);
     Anchor: (Height: 25);
     FlexWeight: 0;
-    Padding: (Full: 4);
   }
 }

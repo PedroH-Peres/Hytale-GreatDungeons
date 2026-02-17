@@ -8,8 +8,8 @@ import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import dev.playyy.commands.TestDungeonPageCommand;
 import dev.playyy.commands.TestInstanceCommand;
 import dev.playyy.events.ExampleEvent;
-import dev.playyy.systems.DungeonLootInteraction;
 import dev.playyy.systems.EntityDungeonListenSystem;
+import dev.playyy.systems.GreatDungeonsInteractions;
 import dev.playyy.systems.NPCKillSystem;
 
 import javax.annotation.Nonnull;
@@ -32,7 +32,7 @@ public class GreatDungeons extends JavaPlugin {
         logInfo("Registered NPC Kill System");
         this.getEntityStoreRegistry().registerSystem(new EntityDungeonListenSystem());
         logInfo("Registered Entity Listen System");
-        this.getEntityStoreRegistry().registerSystem(new DungeonLootInteraction());
+        this.getEntityStoreRegistry().registerSystem(new GreatDungeonsInteractions());
         logInfo("Registered Dungeon Loot Interaction");
         this.getCommandRegistry().registerCommand(new TestDungeonPageCommand("dungeoninfo", "Spawns an Instance Dungeon"));
         logInfo("Registered Dungeon Info Command");

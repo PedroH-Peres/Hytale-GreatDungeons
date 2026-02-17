@@ -17,7 +17,8 @@ public class DungeonLobby {
 
     private final UUID lobbyId;
     private final Player host;
-    private final String dungeonPrefab;
+    private final String mapName;
+    private final String dungeonInstanceId;
     private final int maxPlayers;
 
     public enum PlayerLobbyState {
@@ -25,14 +26,24 @@ public class DungeonLobby {
         PENDING
     }
 
+    public enum MapDifficulty{
+        EASY,
+        MEDIUM,
+        HARD,
+        EXTREME
+    }
+
+    private final String mapDifficulty;
     private final Map<UUID, PlayerData> membersData = new ConcurrentHashMap<>();
     private final Map<UUID, PlayerLobbyState> members = new ConcurrentHashMap<>();
 
-    public DungeonLobby(Player host, String dungeonPrefab, int maxPlayers){
+    public DungeonLobby(Player host, String mapName, int maxPlayers, String mapDifficulty){
         this.lobbyId = UUID.randomUUID();
         this.host = host;
-        this.dungeonPrefab = dungeonPrefab;
+        this.mapName = mapName;
+        this.dungeonInstanceId = DungeonDatabase.getInstanceId(mapName, maxPlayers, mapDifficulty);
         this.maxPlayers = maxPlayers;
+        this.mapDifficulty = mapDifficulty.toUpperCase();
         this.addMember(host);
     }
 
@@ -45,6 +56,10 @@ public class DungeonLobby {
 
     public Player getHost(){
         return host;
+    }
+
+    public String getDungeonInstanceId(){
+        return dungeonInstanceId;
     }
 
     public UUID getLobbyUuid(){
@@ -69,6 +84,10 @@ public class DungeonLobby {
 
     public PlayerLobbyState getPlayerState(UUID playerUuid){
         return members.get(playerUuid);
+    }
+
+    public String getMapDifficulty(){
+        return mapDifficulty;
     }
 
     public boolean isEveryoneReady(){

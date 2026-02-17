@@ -34,7 +34,7 @@ Group {
       Group #KeyList {
         LayoutMode: TopScrolling;
         Background: (Color: #333333);
-        Padding: (Full: 0);
+        Padding: (Full: 5);
       }
     }
     Group {

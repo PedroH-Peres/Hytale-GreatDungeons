@@ -14,8 +14,9 @@ public class LobbyManager {
 
     private static final Map<UUID, DungeonLobby> activeLobbies = new ConcurrentHashMap<>();
     private static final Map<UUID, DungeonLobby> playerLobbyLookup = new ConcurrentHashMap<>();
+    
 
-    public static DungeonLobby createLobby(Player host, String prefab, int max) {
+    public static DungeonLobby createLobby(Player host, String mapName, int maxPlayers, String mapDifficulty) {
         Ref<EntityStore> hostRef = host.getReference();
         UUID hostUuid = hostRef.getStore().getComponent(hostRef, UUIDComponent.getComponentType()).getUuid();
 
@@ -23,7 +24,7 @@ public class LobbyManager {
             return activeLobbies.get(hostUuid);
         }
 
-        DungeonLobby lobby = new DungeonLobby(host, prefab, max);
+        DungeonLobby lobby = new DungeonLobby(host, mapName, maxPlayers, mapDifficulty.toUpperCase());
         activeLobbies.put(hostUuid, lobby);
         playerLobbyLookup.put(hostUuid, lobby);
         return lobby;

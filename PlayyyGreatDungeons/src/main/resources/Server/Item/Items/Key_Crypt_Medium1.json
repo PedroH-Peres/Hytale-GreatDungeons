@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Crypt Key [ Hard | (1) ]",
+    "Name": "Crypt Key [ Medium | (1) ]",
     "Description": "Great Dungeons Key"
   },
   "Icon": "Icons/ItemsGenerated/PortalKey_Howling_Sands.png",
@@ -25,13 +25,13 @@
       "Crypt"
     ],
     "Difficulty": [
-      "Easy"
+      "Medium"
     ],
     "MaxPlayers": [
       "1"
     ]
   },
-  "Quality": "Legendary",
+  "Quality": "Rare",
   "ItemLevel": 51,
   "IconProperties": {
     "Scale": 1.4,

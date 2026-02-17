@@ -7,14 +7,14 @@ Group {
   Group #Title {
     LayoutMode: Top;
     Background: (Color: #1e2864);
-    Label #Title {
+    Label #SelectionTitle {
       Padding: (Full: 0);
-      Text: "Gerenciador de Expedições";
-      Style: (TextColor: #ffffff, Alignment: Center);
+      Text: "Dungeon Menu";
+      Style: (TextColor: #ffffff, FontSize: 18, RenderBold: true, Alignment: Center);
     }
   }
   Group #Content {
-    LayoutMode: MiddleCenter;
+    LayoutMode: Center;
     Background: (Color: #1e2850);
     FlexWeight: 1;
     Group {
@@ -22,32 +22,18 @@ Group {
       Anchor: (Width: 0);
       FlexWeight: 1;
     }
-    Button #CreateButton {
-      LayoutMode: MiddleCenter;
-      Background: (Color: #283c78);
-      Anchor: (Height: 150);
-      FlexWeight: 1;
-      Label #Text {
-        Padding: (Full: 0);
-        Text: "CRIAR";
-        Style: (TextColor: #ffffff, FontSize: 28, RenderBold: true);
-      }
+    $C.@TextButton #CreateButton {
+      Anchor: (Width: 150, Height: 150);
+      Text: "CRIAR";
     }
     Group {
       LayoutMode: Top;
       Anchor: (Width: 0);
       FlexWeight: 1;
     }
-    Button #JoinButton {
-      LayoutMode: MiddleCenter;
-      Background: (Color: #283c78);
-      Anchor: (Height: 150);
-      FlexWeight: 1;
-      Label #Text {
-        Padding: (Full: 0);
-        Text: "ENTRAR";
-        Style: (TextColor: #ffffff, FontSize: 28, RenderBold: true);
-      }
+    $C.@TextButton #JoinButton {
+      Anchor: (Width: 150, Height: 150);
+      Text: "ENTRAR";
     }
     Group {
       LayoutMode: Top;
@@ -58,5 +44,6 @@ Group {
   Group #Footer {
     LayoutMode: Top;
     Background: (Color: #1e2864);
+    Anchor: (Height: 10);
   }
 }

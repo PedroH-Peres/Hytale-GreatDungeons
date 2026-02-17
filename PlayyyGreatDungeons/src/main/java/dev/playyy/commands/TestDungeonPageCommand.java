@@ -31,7 +31,7 @@ public class TestDungeonPageCommand extends AbstractPlayerCommand {
 
         CompletableFuture.runAsync(() -> {
             logInfo("Comando executado");
-            DungeonLobby lobby = LobbyManager.createLobby(player, "a", 2);
+            DungeonLobby lobby = LobbyManager.createLobby(player, "a", 2, "EASY");
             logInfo("Dungeon lobby criado: " + lobby.toString());
             player.getPageManager().openCustomPage(ref, store, new DungeonLobbyUI(playerRef, CustomPageLifetime.CanDismiss));
             logInfo("Teoricamente deu tudo certo");

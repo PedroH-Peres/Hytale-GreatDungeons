@@ -1,0 +1,11 @@
+$C = "../Common.ui";
+
+@LabelStyle = (
+  Hovered: (
+    Background: #000000(0.13),
+  ),
+  Pressed: (
+    Background: #FF0000(0.13),
+  ),
+  Sounds: $C.@ButtonSounds,
+);

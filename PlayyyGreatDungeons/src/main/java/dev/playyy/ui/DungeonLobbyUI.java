@@ -46,7 +46,6 @@ public class DungeonLobbyUI extends InteractiveCustomUIPage<DungeonLobbyUI.Data>
     @Override
     public void build(@NonNullDecl Ref<EntityStore> ref, @NonNullDecl UICommandBuilder uiCommandBuilder, @NonNullDecl UIEventBuilder uiEventBuilder, @NonNullDecl Store<EntityStore> store) {
         uiCommandBuilder.append("Lobby/DungeonLobbyPage.ui");
-        logInfo("To indo buildar a lista");
         buildMiddlePanel(uiCommandBuilder, uiEventBuilder);
         buildLeftPanel(uiCommandBuilder, uiEventBuilder);
     }
@@ -64,17 +63,12 @@ public class DungeonLobbyUI extends InteractiveCustomUIPage<DungeonLobbyUI.Data>
 
     void buildPlayerList(@NonNullDecl UICommandBuilder uiCommandBuilder){
         UUID playerUuid = playerRef.getUuid();
-        logInfo("Iniciando build de " + playerUuid.toString());
         DungeonLobby lobby = LobbyManager.getPlayerLobbybyUuid(playerUuid);
         this.lobbyId = lobby.getLobbyUuid();
-        logInfo(lobby.toString());
         List<UUID> membersId = lobby.getMembersUUID();
-        logInfo("Size: " + membersId.size());
-        logInfo(membersId.toString());
         uiCommandBuilder.clear("#PlayerList");
         for(int i = 0; i < membersId.size(); i++){
             PlayerRef player = Universe.get().getPlayer(membersId.get(i));
-            logInfo("Player [" + i + "]");
             uiCommandBuilder.append("#PlayerList", "Lobby/PlayerListItem.ui");
             uiCommandBuilder.set("#PlayerList[" + i + "] #Name.Text", player.getUsername());
             uiCommandBuilder.set("#PlayerList[" + i + "] #Level.Text", "Lvl.40");
@@ -119,7 +113,7 @@ public class DungeonLobbyUI extends InteractiveCustomUIPage<DungeonLobbyUI.Data>
                     ISpawnProvider spawnProvider = world.getWorldConfig().getSpawnProvider();
                     Transform returnPoint = spawnProvider != null ? spawnProvider.getSpawnPoint(world, playerRef.getUuid()) : new Transform();
                     world.execute(() -> {
-                        CompletableFuture<World> worldFuture = InstancesPlugin.get().spawnInstance("Playyy_Dungeon", world, returnPoint);
+                        CompletableFuture<World> worldFuture = InstancesPlugin.get().spawnInstance(lobby.getDungeonInstanceId(), world, returnPoint);
                         worldFuture.thenAccept(w -> {
                             DungeonManager.register(w);
                         });

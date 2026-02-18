@@ -23,7 +23,7 @@
     "WorldStructure": "crypt_group",
     "PlayerSpawn" : {
       "X": 0,
-      "Y": 101,
+      "Y": 1,
       "Z": 0,
       "Pitch" : 0,
       "Yaw" : 90,
@@ -34,7 +34,7 @@
     "Id": "Global",
     "SpawnPoint": {
       "X": 0,
-      "Y": 101,
+      "Y": 1,
       "Z": 0,
       "Pitch": 0.0,
       "Yaw": 90.0,

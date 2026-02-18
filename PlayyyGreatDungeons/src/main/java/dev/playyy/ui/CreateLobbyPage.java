@@ -55,6 +55,7 @@ public class CreateLobbyPage extends InteractiveCustomUIPage<CreateLobbyPage.Dat
             uiCommandBuilder.set("#KeyList[" + i + "] #MapMaxPlayers.Text", ""+keys.get(i).getPlayerLimit());
             uiEventBuilder.addEventBinding(CustomUIEventBindingType.Activating, "#KeyList[" + i + "] #MapButton", EventData.of("KeySelect", ""+i));
         }
+        uiCommandBuilder.set("#KeyList[" + selected + "].Background", "#4e4e4e");
     }
 
     void buildMiddlePanel(@NonNullDecl UICommandBuilder uiCommandBuilder, DungeonKey key){
@@ -65,7 +66,13 @@ public class CreateLobbyPage extends InteractiveCustomUIPage<CreateLobbyPage.Dat
 
     }
 
+    void updateMapList(){
+        UICommandBuilder uiCommandBuilder = new UICommandBuilder();
+        UIEventBuilder uiEventBuilder = new UIEventBuilder();
+        buildMapList(uiCommandBuilder, uiEventBuilder);
 
+        this.sendUpdate(uiCommandBuilder, uiEventBuilder , false);
+    }
 
     @Override
     public void handleDataEvent(@Nonnull Ref<EntityStore> ref, @Nonnull Store<EntityStore> store, Data data) {
@@ -74,7 +81,7 @@ public class CreateLobbyPage extends InteractiveCustomUIPage<CreateLobbyPage.Dat
 
         if(data.selected_value != null && !data.selected_value.equals("")) {
             selected = Integer.parseInt(data.selected_value);
-
+            updateMapList();
         }
         playerRef.sendMessage(Message.raw("Selected: " + selected));
         playerRef.sendMessage(Message.raw("Value: " + data.create_value));

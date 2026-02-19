@@ -36,6 +36,15 @@ public class DungeonKey {
     public String getDisplayName(){return displayName;}
     public String getDifficulty(){return difficulty;}
     public int getPlayerLimit(){return playerLimit;}
+    public String getIcon(){
+        switch(dungeonMap){
+            case "Crypt":
+                return "Deco_Bone_Skulls";
+            default:
+                return "Deco_Bone_Skulls";
+        }
+
+    }
 
     public void logInfo(String msg) {
         getLogger().atInfo().log("[Playyy] " + msg);

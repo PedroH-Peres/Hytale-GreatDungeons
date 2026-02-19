@@ -32,18 +32,15 @@ public class CreateLobbyPage extends InteractiveCustomUIPage<CreateLobbyPage.Dat
     }
 
     private int selected;
+    private DungeonKey key;
 
     @Override
     public void build(@NonNullDecl Ref<EntityStore> ref, @NonNullDecl UICommandBuilder uiCommandBuilder, @NonNullDecl UIEventBuilder uiEventBuilder, @NonNullDecl Store<EntityStore> store) {
         uiCommandBuilder.append("UI/CreateLobby.ui");
         buildMapList(uiCommandBuilder, uiEventBuilder);
-        buildRightPanel(uiCommandBuilder, uiEventBuilder);
+        buildMiddlePanel(uiCommandBuilder, uiEventBuilder,key);
     }
 
-    void buildRightPanel(@NonNullDecl UICommandBuilder uiCommandBuilder, @NonNullDecl UIEventBuilder uiEventBuilder){
-        uiEventBuilder.addEventBinding(CustomUIEventBindingType.Activating, "#CreateLobbyButton", EventData.of("CreateButton", "create"));
-        playerRef.sendMessage(Message.raw("Create Button created"));
-    }
 
     void buildMapList(@NonNullDecl UICommandBuilder uiCommandBuilder, @NonNullDecl UIEventBuilder uiEventBuilder){
         List<DungeonKey> keys = InventoryScannerSystem.getAvailableKeys(playerRef.getReference().getStore().getComponent(playerRef.getReference(), Player.getComponentType()));
@@ -58,18 +55,27 @@ public class CreateLobbyPage extends InteractiveCustomUIPage<CreateLobbyPage.Dat
         uiCommandBuilder.set("#KeyList[" + selected + "].Background", "#4e4e4e");
     }
 
-    void buildMiddlePanel(@NonNullDecl UICommandBuilder uiCommandBuilder, DungeonKey key){
-
+    void buildMiddlePanel(@NonNullDecl UICommandBuilder uiCommandBuilder,@NonNullDecl UIEventBuilder uiEventBuilder, DungeonKey key){
+        buildKeyInfo(uiCommandBuilder, key);
+        uiEventBuilder.addEventBinding(CustomUIEventBindingType.Activating, "#CreateLobbyButton", EventData.of("CreateButton", "create"));
+        playerRef.sendMessage(Message.raw("Create Button created"));
     }
 
-    void buildMapInfo(@NonNullDecl UICommandBuilder uiCommandBuilder, DungeonKey key){
-
+    void buildKeyInfo(@NonNullDecl UICommandBuilder uiCommandBuilder, DungeonKey key){
+        if(key == null) return;
+        uiCommandBuilder.clear("#KeyInfo");
+        uiCommandBuilder.append("#KeyInfo", "UI/DungeonInfo.ui");
+        uiCommandBuilder.set("#KeyInfo[0] #MapName.Text" , key.getDungeonMap());
+        uiCommandBuilder.set("#KeyInfo[0] #Difficulty.Text", key.getDifficulty());
+        uiCommandBuilder.set("#KeyInfo[0] #MaxPlayers.Text", "(1-" + key.getPlayerLimit()+ ")");
+        uiCommandBuilder.set("#KeyInfo[0] #ItemIcon.ItemId", key.getIcon());
     }
 
     void updateMapList(){
         UICommandBuilder uiCommandBuilder = new UICommandBuilder();
         UIEventBuilder uiEventBuilder = new UIEventBuilder();
         buildMapList(uiCommandBuilder, uiEventBuilder);
+        buildKeyInfo(uiCommandBuilder, key);
 
         this.sendUpdate(uiCommandBuilder, uiEventBuilder , false);
     }
@@ -81,12 +87,12 @@ public class CreateLobbyPage extends InteractiveCustomUIPage<CreateLobbyPage.Dat
 
         if(data.selected_value != null && !data.selected_value.equals("")) {
             selected = Integer.parseInt(data.selected_value);
+            key = keys.get(selected);
             updateMapList();
         }
         playerRef.sendMessage(Message.raw("Selected: " + selected));
         playerRef.sendMessage(Message.raw("Value: " + data.create_value));
-        DungeonKey key = keys.get(selected);
-        buildMiddlePanel(new UICommandBuilder(), key);
+        buildMiddlePanel(new UICommandBuilder(), new UIEventBuilder() ,key);
 
         if(data.create_value.equals("create")){
             playerRef.sendMessage(Message.raw("Criando..."));

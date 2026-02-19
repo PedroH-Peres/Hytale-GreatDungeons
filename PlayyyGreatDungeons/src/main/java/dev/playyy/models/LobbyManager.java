@@ -6,6 +6,8 @@ import com.hypixel.hytale.server.core.entity.UUIDComponent;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
+import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
@@ -14,7 +16,7 @@ public class LobbyManager {
 
     private static final Map<UUID, DungeonLobby> activeLobbies = new ConcurrentHashMap<>();
     private static final Map<UUID, DungeonLobby> playerLobbyLookup = new ConcurrentHashMap<>();
-    
+
 
     public static DungeonLobby createLobby(Player host, String mapName, int maxPlayers, String mapDifficulty) {
         Ref<EntityStore> hostRef = host.getReference();
@@ -40,6 +42,10 @@ public class LobbyManager {
         return playerLobbyLookup.get(playerUuid);
     }
 
+    public static Collection<DungeonLobby> getActiveLobbies(){
+        return activeLobbies.values();
+    }
+
     public static DungeonLobby getPlayerLobbybyUuid(UUID playerUuid) {
         return playerLobbyLookup.get(playerUuid);
     }
@@ -62,6 +68,7 @@ public class LobbyManager {
 
         playerLobbyLookup.put(pUuid, lobby);
     }
+
 
 
 

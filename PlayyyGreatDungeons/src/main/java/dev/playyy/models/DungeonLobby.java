@@ -57,6 +57,10 @@ public class DungeonLobby {
     public Player getHost(){
         return host;
     }
+    public String getMapName(){return mapName;}
+    public int getPlayersQuantity(){
+        return members.size();
+    }
 
     public String getDungeonInstanceId(){
         return dungeonInstanceId;

@@ -51,6 +51,7 @@ public class GreatDungeonsInteractions extends EntityEventSystem<EntityStore, Us
         Ref<EntityStore> playerRef = event.getContext().getEntity();
         PlayerRef pRef = playerRef.getStore().getComponent(playerRef, PlayerRef.getComponentType());
         Player player = playerRef.getStore().getComponent(playerRef, Player.getComponentType());
+        if(player==null) return;
         World world = playerRef.getStore().getExternalData().getWorld();
         if(DungeonManager.isDungeonWorld(world)){
             DungeonInstance instance = DungeonManager.get(world);
@@ -63,9 +64,17 @@ public class GreatDungeonsInteractions extends EntityEventSystem<EntityStore, Us
         }
 
         if(event.getBlockType().getId().equals("GreatDungeons_Portal")){
+            if(LobbyManager.getPlayerLobby(player) == null){
                 player.getPageManager().openCustomPage(playerRef, playerRef.getStore(), new SelectionPage(pRef, CustomPageLifetime.CanDismiss));
 
                 pRef.sendMessage(Message.raw("Select Page Shown"));
+            }else{
+                assert pRef != null;
+                if(LobbyManager.getPlayerLobby(player).getMemberData(pRef.getUuid()).page == null) return;
+
+                player.getPageManager().openCustomPage(playerRef, playerRef.getStore(), LobbyManager.getPlayerLobby(player).getMemberData(pRef.getUuid()).page );
+            }
+
 
         }
 

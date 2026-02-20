@@ -8,6 +8,7 @@ import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import dev.playyy.commands.TestDungeonPageCommand;
 import dev.playyy.commands.TestInstanceCommand;
 import dev.playyy.events.ExampleEvent;
+import dev.playyy.models.DungeonInstance;
 import dev.playyy.systems.EntityDungeonListenSystem;
 import dev.playyy.systems.GreatDungeonsInteractions;
 import dev.playyy.systems.NPCKillSystem;

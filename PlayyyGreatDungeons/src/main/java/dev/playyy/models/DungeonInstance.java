@@ -68,23 +68,24 @@ public class DungeonInstance {
             if(playerRef == null) return;
             Player player = getPlayer(playerRef);
             if(player.getHudManager().getCustomHud() == null){
-                dungeonUi = new DungeonHUD(playerRef, totalMobs, currentKills, currentBosses);
-                player.getHudManager().setCustomHud(playerRef, dungeonUi);
-            }else {
-                player.getHudManager().resetHud(playerRef);
+                DungeonHUD dungeon_Ui = new DungeonHUD(playerRef, totalMobs, currentKills, currentBosses);
+                player.getHudManager().setCustomHud(playerRef, dungeon_Ui);
+                DungeonHUD.activeHuds.put(player, dungeon_Ui);
             }
         }
     }
+
 
     public void updatePlayersHud(){
         for(var playerRef : world.getPlayerRefs()){
             if(playerRef == null) return;
             Player player = getPlayer(playerRef);
             if(player.getHudManager().getCustomHud() == null){
-                dungeonUi = new DungeonHUD(playerRef, totalMobs, currentKills, currentBosses);
-                player.getHudManager().setCustomHud(playerRef, dungeonUi);
+                DungeonHUD dungeon_Ui = new DungeonHUD(playerRef, totalMobs, currentKills, currentBosses);
+                player.getHudManager().setCustomHud(playerRef, dungeon_Ui);
+                DungeonHUD.activeHuds.put(player, dungeon_Ui);
             }else {
-                dungeonUi.updateCurrentKills(currentKills, currentBosses);
+                DungeonHUD.activeHuds.get(player).updateCurrentKills(currentKills, currentBosses);
             }
         }
     }

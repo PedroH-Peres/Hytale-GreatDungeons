@@ -4,6 +4,7 @@ $C = "../Common.ui";
 Group {
   LayoutMode: Left;
   Background: (Color: #3c3c3c);
+  Padding: (Full: 3);
   Button #RoomButton {
     LayoutMode: Left;
     FlexWeight: 1;
@@ -38,7 +39,6 @@ Group {
     Group #HostGroup {
       LayoutMode: Left;
       FlexWeight: 1;
-      Padding: (Full: 0);
       Label {
         Text: "Host:";
         Style: (TextColor: #ffffff);

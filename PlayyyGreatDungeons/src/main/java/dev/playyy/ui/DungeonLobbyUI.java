@@ -52,8 +52,9 @@ public class DungeonLobbyUI extends InteractiveCustomUIPage<DungeonLobbyUI.Data>
 
     public void updatePlayersList(){
         UICommandBuilder uiCommandBuilder = new UICommandBuilder();
+        UIEventBuilder uiEventBuilder = new UIEventBuilder();
         buildPlayerList(uiCommandBuilder);
-        this.sendUpdate(uiCommandBuilder, false);
+        this.sendUpdate(uiCommandBuilder, uiEventBuilder,false);
     }
 
     void buildMiddlePanel(@NonNullDecl UICommandBuilder uiCommandBuilder, @NonNullDecl UIEventBuilder uiEventBuilder){
@@ -80,6 +81,11 @@ public class DungeonLobbyUI extends InteractiveCustomUIPage<DungeonLobbyUI.Data>
                 uiCommandBuilder.set("#ReadyButton.Text", "Ready");
             }
 
+        }
+        if(lobby.getPlayerState(playerUuid) == DungeonLobby.PlayerLobbyState.READY){
+            uiCommandBuilder.set("#ReadyButton.Text", "Unready");
+        }else{
+            uiCommandBuilder.set("#ReadyButton.Text", "Ready");
         }
 
     }
@@ -116,13 +122,18 @@ public class DungeonLobbyUI extends InteractiveCustomUIPage<DungeonLobbyUI.Data>
                         CompletableFuture<World> worldFuture = InstancesPlugin.get().spawnInstance(lobby.getDungeonInstanceId(), world, returnPoint);
                         worldFuture.thenAccept(w -> {
                             DungeonManager.register(w);
+
                         });
-                        InstancesPlugin.teleportPlayerToLoadingInstance(playerRef.getReference(), playerRef.getReference().getStore(), worldFuture, null);
+                        for(var memberId : lobby.getMembersUUID()){
+                            InstancesPlugin.teleportPlayerToLoadingInstance(Universe.get().getPlayer(memberId).getReference(), Universe.get().getPlayer(memberId).getReference().getStore(), worldFuture , null);
+                        }
 
                     });
+
                 }else{
                     playerRef.sendMessage(Message.raw("Todos os jogadores devem estar prontos!"));
                 }
+
             }else{
                 playerRef.sendMessage(Message.raw("Apenas o Host pode iniciar a expedição!"));
             }

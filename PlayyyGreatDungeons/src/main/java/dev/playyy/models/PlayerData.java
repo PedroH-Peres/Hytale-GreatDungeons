@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public class PlayerData {
     public final UUID UUID;
-    DungeonLobbyUI page;
+    public DungeonLobbyUI page;
 
     PlayerData(UUID uuid){
         this.UUID = uuid;

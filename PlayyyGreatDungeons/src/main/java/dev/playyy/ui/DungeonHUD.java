@@ -1,11 +1,17 @@
 package dev.playyy.ui;
 
+import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.entity.entities.player.hud.CustomUIHud;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 public class DungeonHUD extends CustomUIHud {
+
+    public static Map<Player, DungeonHUD> activeHuds = new ConcurrentHashMap<>();
 
     private int totalMobs, currentKills, bosses;
     public DungeonHUD(@NonNullDecl PlayerRef playerRef, int totalMobs, int currentKills, int bosses) {

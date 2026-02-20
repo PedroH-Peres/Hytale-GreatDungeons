@@ -27,7 +27,7 @@ public class LobbyManager {
         }
 
         DungeonLobby lobby = new DungeonLobby(host, mapName, maxPlayers, mapDifficulty.toUpperCase());
-        activeLobbies.put(hostUuid, lobby);
+        activeLobbies.put(lobby.getLobbyUuid(), lobby);
         playerLobbyLookup.put(hostUuid, lobby);
         return lobby;
     }
@@ -44,6 +44,10 @@ public class LobbyManager {
 
     public static Collection<DungeonLobby> getActiveLobbies(){
         return activeLobbies.values();
+    }
+
+    public static void addMemberinLobby(UUID playerUuid, DungeonLobby lobby){
+        playerLobbyLookup.put(playerUuid, lobby);
     }
 
     public static DungeonLobby getPlayerLobbybyUuid(UUID playerUuid) {

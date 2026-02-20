@@ -50,8 +50,13 @@ public class DungeonLobby {
     public void addMember(Player player){
         Ref<EntityStore> playerRef = player.getReference();
         UUID playerId = playerRef.getStore().getComponent(playerRef, UUIDComponent.getComponentType()).getUuid();
+        LobbyManager.addMemberinLobby(playerId, this);
         membersData.put(playerId, new PlayerData(playerId));
         members.put(playerId, PlayerLobbyState.PENDING);
+        for (var memberData : this.getMembersData()){
+            if (memberData.page == null) continue;
+            memberData.page.updatePlayersList();
+        }
     }
 
     public Player getHost(){
@@ -72,6 +77,10 @@ public class DungeonLobby {
 
     public int getMaxPlayers(){
         return maxPlayers;
+    }
+
+    public boolean isFull(){
+        return members.size() == maxPlayers;
     }
 
     public List<UUID> getMembersUUID(){
@@ -97,6 +106,16 @@ public class DungeonLobby {
     public boolean isEveryoneReady(){
         return members.values().stream()
                 .allMatch(state -> state == PlayerLobbyState.READY);
+    }
+
+    public String getIcon(){
+        switch(mapName){
+            case "Crypt":
+                return "Deco_Bone_Skulls";
+            default:
+                return "Deco_Bone_Skulls";
+        }
+
     }
 
     public void togglePlayerReady(UUID playerUuid){

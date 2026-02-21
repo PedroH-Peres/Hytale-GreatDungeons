@@ -1,9 +1,11 @@
 package dev.playyy.models;
 
 import com.hypixel.hytale.component.Ref;
+import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.entity.Entity;
 import com.hypixel.hytale.server.core.entity.UUIDComponent;
 import com.hypixel.hytale.server.core.entity.entities.Player;
+import com.hypixel.hytale.server.core.universe.Universe;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
 import java.util.Collection;
@@ -12,10 +14,12 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
+import static com.hypixel.hytale.logger.HytaleLogger.getLogger;
+
 public class LobbyManager {
 
-    private static final Map<UUID, DungeonLobby> activeLobbies = new ConcurrentHashMap<>();
-    private static final Map<UUID, DungeonLobby> playerLobbyLookup = new ConcurrentHashMap<>();
+    private static final Map<UUID, DungeonLobby> activeLobbies = new ConcurrentHashMap<>(); // LobbyId -> Lobby
+    private static final Map<UUID, DungeonLobby> playerLobbyLookup = new ConcurrentHashMap<>(); // PlayerId -> Lobby
 
 
     public static DungeonLobby createLobby(Player host, String mapName, int maxPlayers, String mapDifficulty) {
@@ -50,17 +54,22 @@ public class LobbyManager {
         playerLobbyLookup.put(playerUuid, lobby);
     }
 
+    public static void removeMemberinLobby(UUID playerUuid, DungeonLobby lobby){
+        playerLobbyLookup.remove(playerUuid);
+    }
+
     public static DungeonLobby getPlayerLobbybyUuid(UUID playerUuid) {
         return playerLobbyLookup.get(playerUuid);
     }
 
-    public static void removeLobby(Player host) {
+    public static void removeLobby(Player host, UUID lobbyId) {
         Ref<EntityStore> hostRef = host.getReference();
         UUID hostUuid = hostRef.getStore().getComponent(hostRef, UUIDComponent.getComponentType()).getUuid();
-
-        DungeonLobby lobby = activeLobbies.remove(hostUuid);
+        DungeonLobby lobby = activeLobbies.get(lobbyId);
+        activeLobbies.remove(lobbyId);
         if (lobby != null) {
             for (UUID memberId : lobby.getMembersUUID()) {
+
                 playerLobbyLookup.remove(memberId);
             }
         }
@@ -72,7 +81,9 @@ public class LobbyManager {
 
         playerLobbyLookup.put(pUuid, lobby);
     }
-
+    public static void logInfo(String msg) {
+        getLogger().atInfo().log("[Playyy] " + msg);
+    }
 
 
 

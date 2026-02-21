@@ -22,9 +22,11 @@ import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.spawn.ISpawnProvider;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import dev.playyy.GreatDungeons;
+import dev.playyy.models.DungeonKey;
 import dev.playyy.models.DungeonLobby;
 import dev.playyy.models.DungeonManager;
 import dev.playyy.models.LobbyManager;
+import dev.playyy.systems.InventoryScannerSystem;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
 import javax.annotation.Nonnull;
@@ -47,6 +49,7 @@ public class DungeonLobbyUI extends InteractiveCustomUIPage<DungeonLobbyUI.Data>
     public void build(@NonNullDecl Ref<EntityStore> ref, @NonNullDecl UICommandBuilder uiCommandBuilder, @NonNullDecl UIEventBuilder uiEventBuilder, @NonNullDecl Store<EntityStore> store) {
         uiCommandBuilder.append("Lobby/DungeonLobbyPage.ui");
         buildMiddlePanel(uiCommandBuilder, uiEventBuilder);
+        buildRightPanel(uiCommandBuilder, uiEventBuilder);
         buildLeftPanel(uiCommandBuilder, uiEventBuilder);
     }
 
@@ -90,8 +93,12 @@ public class DungeonLobbyUI extends InteractiveCustomUIPage<DungeonLobbyUI.Data>
 
     }
 
-    void buildLeftPanel(@NonNullDecl UICommandBuilder uiCommandBuilder, @NonNullDecl UIEventBuilder uiEventBuilder){
+    void buildRightPanel(@NonNullDecl UICommandBuilder uiCommandBuilder, @NonNullDecl UIEventBuilder uiEventBuilder){
         uiEventBuilder.addEventBinding(CustomUIEventBindingType.Activating, "#StartButton", EventData.of("StartButton", "Start"));
+    }
+
+    void buildLeftPanel(@NonNullDecl UICommandBuilder uiCommandBuilder, @NonNullDecl UIEventBuilder uiEventBuilder){
+        uiEventBuilder.addEventBinding(CustomUIEventBindingType.Activating, "#ExitButton", EventData.of("ExitButton", "Exit"));
     }
 
 
@@ -102,6 +109,17 @@ public class DungeonLobbyUI extends InteractiveCustomUIPage<DungeonLobbyUI.Data>
         DungeonLobby lobby = LobbyManager.getPlayerLobbybyUuid(playerRef.getUuid());
         Player host = lobby.getHost();
         UUID hostUuid = host.getReference().getStore().getComponent(host.getReference(), UUIDComponent.getComponentType()).getUuid();
+        Player player = playerRef.getReference().getStore().getComponent(playerRef.getReference(), Player.getComponentType());
+        if(data.exit_value.equals("Exit")){
+            if(player == null) return;
+            if(hostUuid == playerRef.getUuid()){
+                LobbyManager.removeLobby(player, lobbyId);
+            }else{
+                lobby.removeMember(player);
+            }
+            player.getPageManager().openCustomPage(ref, store, new SelectionPage(playerRef, CustomPageLifetime.CanDismiss));
+        }
+
         if(data.ready_value.equals("ReadyToggle")){
             LobbyManager.getPlayerLobbybyUuid(playerRef.getUuid()).togglePlayerReady(playerRef.getUuid());
             data.ready_value = "";
@@ -110,6 +128,12 @@ public class DungeonLobbyUI extends InteractiveCustomUIPage<DungeonLobbyUI.Data>
             data.start_value = "";
             if(playerRef.getUuid() == hostUuid){
                 if(lobby.isEveryoneReady()){
+                    List<DungeonKey> keys = InventoryScannerSystem.getAvailableKeys(player);
+                    for(var key : keys){
+                        if(key.getDungeonMap().equals(lobby.getMapName()) && key.getDifficulty().toUpperCase().equals(lobby.getMapDifficulty()) && key.getPlayerLimit() == lobby.getMaxPlayers()){
+                            player.getInventory().getStorage().removeItemStackFromSlot((short) key.getSlotId(), 1);
+                        }
+                    }
                     InstancesPlugin plugin = InstancesPlugin.get();
 
                     UUID playerUUID = playerRef.getUuid();
@@ -153,10 +177,15 @@ public class DungeonLobbyUI extends InteractiveCustomUIPage<DungeonLobbyUI.Data>
                         (data, s) -> data.start_value = s,
                         data -> data.start_value)
                 .add()
+                .append(new KeyedCodec<>("ExitButton", Codec.STRING),
+                        (data, s) -> data.exit_value = s,
+                        data -> data.exit_value)
+                .add()
                 .build();
 
         private String ready_value = "";
         private String start_value = "";
+        private String exit_value = "";
     }
 
     public void logInfo(String msg) {

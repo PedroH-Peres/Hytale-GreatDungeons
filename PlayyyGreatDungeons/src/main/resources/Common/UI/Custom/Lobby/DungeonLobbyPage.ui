@@ -3,7 +3,7 @@ $C = "../Common.ui";
 Group {
   LayoutMode: Top;
   Background: (Color: #0c1d2c);
-  Anchor: (Width: 1200, Height: 720);
+  Anchor: (Width: 1000, Height: 600);
   Group #Title {
     LayoutMode: MiddleCenter;
     Background: (Color: #8d12ba);
@@ -19,15 +19,33 @@ Group {
     LayoutMode: Left;
     Background: (Color: #0e2048);
     FlexWeight: 1;
-    Padding: (Full: 5);
     Group #LeftContainer {
       LayoutMode: Top;
       FlexWeight: 1;
       Group #Lobby {
         LayoutMode: Top;
+        FlexWeight: 1;
         Label #Labelfddac357 {
           Text: "Dungeon Lobby ID:";
           Style: (TextColor: #ffffff);
+        }
+        Group #Group79c563ab {
+          LayoutMode: Top;
+          Padding: (Full: 0);
+        }
+        Group #Group8fd9bdf1 {
+          LayoutMode: Top;
+          FlexWeight: 1;
+          Padding: (Full: 0);
+        }
+        $C.@TextButton #ExitButton {
+          Padding: (Full: 0);
+          Text: "SAIR";
+        }
+        Group #Groupb5a6669b {
+          LayoutMode: Top;
+          Anchor: (Height: 10);
+          Padding: (Full: 0);
         }
       }
     }
@@ -57,7 +75,6 @@ Group {
       Group {
         LayoutMode: Top;
         Anchor: (Height: 10);
-        Padding: (Full: 0);
       }
     }
     Group {
@@ -74,7 +91,6 @@ Group {
       Group #Group5c5d419e {
         LayoutMode: Top;
         Anchor: (Bottom: 2);
-        Padding: (Full: 0);
       }
       Group #DungeonInfo {
         LayoutMode: TopScrolling;
@@ -86,7 +102,6 @@ Group {
       Group {
         LayoutMode: Top;
         Anchor: (Height: 10);
-        Padding: (Full: 0);
       }
     }
   }

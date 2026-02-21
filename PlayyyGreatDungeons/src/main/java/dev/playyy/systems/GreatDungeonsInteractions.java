@@ -65,11 +65,12 @@ public class GreatDungeonsInteractions extends EntityEventSystem<EntityStore, Us
 
         if(event.getBlockType().getId().equals("GreatDungeons_Portal")){
             if(LobbyManager.getPlayerLobby(player) == null){
+                logInfo("To aqui!");
                 player.getPageManager().openCustomPage(playerRef, playerRef.getStore(), new SelectionPage(pRef, CustomPageLifetime.CanDismiss));
 
                 pRef.sendMessage(Message.raw("Select Page Shown"));
             }else{
-                assert pRef != null;
+                if(LobbyManager.getPlayerLobby(player).getMemberData(pRef.getUuid()) == null) return;
                 if(LobbyManager.getPlayerLobby(player).getMemberData(pRef.getUuid()).page == null) return;
 
                 player.getPageManager().openCustomPage(playerRef, playerRef.getStore(), LobbyManager.getPlayerLobby(player).getMemberData(pRef.getUuid()).page );

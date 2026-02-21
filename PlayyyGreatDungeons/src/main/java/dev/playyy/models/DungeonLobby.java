@@ -59,6 +59,17 @@ public class DungeonLobby {
         }
     }
 
+    public void removeMember(Player player){
+        Ref<EntityStore> playerRef = player.getReference();
+        UUID playerId = playerRef.getStore().getComponent(playerRef, UUIDComponent.getComponentType()).getUuid();
+        LobbyManager.removeMemberinLobby(playerId, this);
+        membersData.remove(playerId);
+        members.remove(playerId);
+        for (var memberData : this.getMembersData()){
+            if (memberData.page == null) continue;
+            memberData.page.updatePlayersList();
+        }
+    }
     public Player getHost(){
         return host;
     }
